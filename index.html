@@ -21,26 +21,14 @@
 body, html {
     height: 100%;
 }
-
-
-/* The hero image*/
 .hero-image {
-    /*The image used*/
-    /*background-image: url("http://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=0d609b43c57a85ae59c32bb258f752dc");*/
-
-  background-color: LightGray;
-
-    /* Set a specific height*/
+    background-color: White;
     height: 50%;
-
-    /* Position and center the image to scale nicely on all screens*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
-/* Place text in the middle of the image*/
 .hero-text {
     text-align: center;
     position: absolute;
@@ -49,26 +37,22 @@ body, html {
     transform: translate(-50%, -50%);
     color: black;
 }
-
-
 body {
-  background-color: rgba(0,0,0,0.140);
+  background-color: Lavender;
 }
-
 .content-background {
-  background-color: rgba(0,0,0,0.140);
+  background-color: Cornsilk;
 }
-
-.awesome-person {
+.facts {
   font-size: 24px;
   margin-top: 0;
 }
-
 .table {
   display: table;
 }
-
 .hero-text, .about_me_text{
+  max-width: 100%;
+  height: auto;
   padding-top: 56px;
   padding-bottom: 24px;
   text-align: center;
@@ -77,152 +61,54 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
-
-/*.hero-line {
+.hero-line {
   height: 5px;
-  background-color: #dadada;
+  background-color: Black;
   width: 40%;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}*/
-
+}
 .img_container {
   border-radius: 50%;
   width: 100%;
   border: 5px solid black;
 }
-
 .spacer {
   padding-top: 1rem;
 }
-
 .spacer:last-of-type {
   padding-bottom: 1rem;
 }
-
 footer {
   background-color: rgba(0,0,0,0.888);
   text-align: center;
 }
-
 #footer h3 {
   color: white;
 }
-
 #footer p {
   color: rgba(255,255,255,0.7);
 }
-
 .footer-col-padding {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 #footer i {
   color: rgba(255,255,255,0.7);
   zoom: 140%;
 }
-
-
 .card-img-top {
     width: 100%;
     height: 15vw;
     object-fit: cover;
 }
-
-/*^^^^^^ABOVE IS GOOD*/
-
-
-
-.flip {
-  -webkit-perspective: 800;
-          perspective: 800;
-        position: relative;
-        text-align: center;
-}
-.flip .card.flipped {
-  -webkit-transform: rotatey(-180deg);
-          transform: rotatey(-180deg);
-  	-webkit-backface-visibility: hidden;
-}
-.flip .card {
-    width: 270px;
-    height: 178px;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
-    transform-style: preserve-3d;
-    transition: 0.5s;
-    background-color: #fff;
-      /*-webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;*/
-
-}
-.flip .card .face {
-  -webkit-backface-visibility: hidden ;
-    backface-visibility: hidden ;
-   z-index: 2;
-}
-.flip .card .front {
-   position: absolute;
-   width: 270px;
-   z-index: 1;
-}
-.flip .card .img {
-   position: relaitve;
-   width: 270px;
-   height: 178px;
-   z-index: 1;
-   border: 2px solid #000;
-}
-.flip .card .back {
-  padding-top: 10%;
-  -webkit-transform: rotatey(-180deg);
-          transform: rotatey(-180deg);
-}
-  .inner{margin:0px !important;}
-
-
-/*.about_me_text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-}*/
-
-
-
 </style>
-
-<!--NEW NAV BAR / changes-->
-
-
-<!--<body>
-
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <!--<li><a href="#">Hello</a></li>
-</ul>
-
-</body>-->
-
 
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
-
-<!-- Brand -->
-<a class="navbar-brand" href="#">Logo</a>
-
-<!-- Links -->
 <div class="collapse navbar-collapse justify-content-end" id="nav-content">
 <ul class="navbar-nav">
 <li class="nav-item">
@@ -232,38 +118,27 @@ footer {
   <a class="nav-link" href="#about_me">About Me</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#IDK">IDK</a>
+  <a class="nav-link" href="#awards">Awards</a>
 </li>
   <li class="nav-item">
   <a class="nav-link" href="#portfolio">Portfolio</a>
 </li>
 </ul>
 </nav>
-
-<!-- Set body height so that scrollbars grow -->
 <style scoped>
 body {
 height:2000px;
 background-image:url('/pix/samples/bubble1.gif');
 }
 </style>
-
-
-
-
-
-
-
-<!--KEEP-->
-
 <div class="container content-background">
   <div class="hero-image">
   <div class="row">
     <div class="col-8">
       <div class="hero-text">
         <p>Computer Science Major, Photographer, aspiring DJ</p>
-        <!--<div class="hero-line"></div>-->
-        <!--<h1 class="awesome-person">Awesome Person, Cryptographic Gangster, and Web Developer</h1>-->
+        <div class="hero-line"></div>
+          <h2 class="facts">Check out below for facts about me</h2>
       </div>
     </div>
     <div class="col-4">
@@ -272,233 +147,96 @@ background-image:url('/pix/samples/bubble1.gif');
     </div>
   </div>
     </div>
-  <!--^^^^^^ABOVE THIS IS GOOD^^^^^^^^-->
-
-
-
-
-
-
-
-  <!--FIX THIS DUMB GRID SYSTEM SHIT!!! >.<-->
-
-
-<!--<div class="card-deck">
-  <div class="card">
-    <img  class="card-img-top" src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/74/95/fotolia_801950_XS.jpg" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="row spacer" id="portfolio">
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="https://azure.microsoft.com/svghandler/sql-server-stretch-database/?width=600&height=315" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SQL</h5>
+          <p class="card-text">Build a Database that tracks and reserves equipment</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="https://coachart.org/wp-content/uploads/2016/08/acting2-ByB74D-clipart.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Acting</h5>
+          <p class="card-text">Been an Actress/Model since I was two</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="https://wallpapercave.com/wp/Eomxorw.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Puppy</h5>
+          <p class="card-text">Raised a puppy to be seeing eye guide dog</p>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  <div class="card">
-    <img class="card-img-top" src="http://www.sevenoakskennel.com/Picture%20Perfect/Shadow%203%20colors%202-25-09.jpg" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="row spacer">
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="http://www.freeportnewsnetwork.com/wp-content/uploads/2016/12/music-07.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Music</h5>
+          <p class="card-text">I love music especially EDM</p>
+        </div>
+      </div>
     </div>
-  </div>
-
-
-  <div class="card">
-    <!--<div class="card img-fluid" style="width:500px">
-    <!--<img class="card-img-top" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap" style="width:100%">
-      <img class="card img-fluid" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap" style="width:500%">
-
-
-    <!--<div class="card-block">
-     <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-   <!-- </div>
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="https://i.pinimg.com/564x/3b/ed/c7/3bedc7173cffd2c351795bbe211708f4--new-england-patriots-logo-patriots-football.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Favorite Team</h5>
+          <p class="card-text">I am a HUGE Patriots fan</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="https://www.geekbomb.net/wp-content/uploads/2017/07/The-police-Box-TARDIS-from-Doctor-Who-in-space.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Doctor Who?</h5>
+          <p class="card-text">I love Doctor Who. Matt Smith was my favorit Doctor and Clara is my favorite companion</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-  </div>-->
-
-
-     <!-- </div>
-    </div>
-  </div>
-</div>-->
-
-<!---------------------------------------------->
-
-
-  <div class="row spacer" id="portfolio">
- <div class="col-sm">
-      <div class="flip">
-        <div class="card">
-          <div class="face front">
-            <div class="inner">
-              <img class="card-img-top" src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/74/95/fotolia_801950_XS.jpg" alt="Card image cap">
-           </div>
-          </div>
-          <div class="face back">
-            <div class="inner text-center">
-              <h3>Improved efficiency through automation</h3>
-              <button type="button" class="btn btn-default">Know More</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-
-    <!-- <img class="card-img-top" src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/74/95/fotolia_801950_XS.jpg" alt="Card image cap">-->
-
-
-    <div class="col-sm">
-      <div class="flip">
-        <div class="card">
-          <div class="face front">
-            <div class="inner">
-              <img class="card-img-top" src="http://www.sevenoakskennel.com/Picture%20Perfect/Shadow%203%20colors%202-25-09.jpg" alt="Card image cap">
-           </div>
-          </div>
-          <div class="face back">
-            <div class="inner text-center">
-              <h3>Improved efficiency through automation</h3>
-              <button type="button" class="btn btn-default">Know More</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-
-     <!--<img class="card-img-top" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap">-->
-
-   <div class="col-sm">
-      <div class="flip">
-        <div class="card">
-          <div class="face front">
-            <div class="inner">
-              <img class="card-img-top" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap">
-           </div>
-          </div>
-          <div class="face back">
-            <div class="inner text-center">
-              <h3>Improved efficiency through automation</h3>
-              <button type="button" class="btn btn-default">Know More</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-
-
-
-
- <div class="col-sm">
-      <div class="flip">
-        <div class="card">
-          <div class="face front">
-            <div class="inner">
-              <img class="card-img-top" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap">
-           </div>
-          </div>
-          <div class="face back">
-            <div class="inner text-center">
-              <h3>Improved efficiency through automation</h3>
-              <button type="button" class="btn btn-default">Know More</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-
-
-
-
- <div class="col-sm">
-      <div class="flip">
-        <div class="card">
-          <div class="face front">
-            <div class="inner">
-              <img class="card-img-top" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap">
-           </div>
-          </div>
-          <div class="face back">
-            <div class="inner text-center">
-              <h3>Improved efficiency through automation</h3>
-              <button type="button" class="btn btn-default">Know More</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-
-
- <div class="col-sm">
-      <div class="flip">
-        <div class="card">
-          <div class="face front">
-            <div class="inner">
-              <img class="card-img-top" src="https://thehappypooch.com/wp-content/uploads/2016/03/black-lab-puppy-on-grass.jpg" alt="Card image cap">
-           </div>
-          </div>
-          <div class="face back">
-            <div class="inner text-center">
-              <h3>Improved efficiency through automation</h3>
-              <button type="button" class="btn btn-default">Know More</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-  </div>
-  </div>
-
-
-
-
-
-  <!--------------GOOD---------------->
-
-
- <div class="container content-background" style="background-color: LightGray; padding-top: 24px; padding-bottom: 24px; text-align:center" id="about_me">
+ <div class="container content-background" style="background-color: White; padding-top: 24px; padding-bottom: 24px; text-align:center" id="about_me">
    <h4>About Me</h4>
       <div class="about_me_text">
-        <p>Front End Engineer by day. I enjoy working with TypeScript, Angular, and serverless architecture. I am currently getting into cryptocurrency. I also teach periodically.</p>
+        <p>I am in my third year of studying computer science. My favorite classes were Databases and Andriod App Development. In my spare time I enjoy taking and editing pictures, check out my instagram for some of my photos. I have learning how to DJ, I love music especically electronic</p>
    </div>
 </div>
-
-  <div class="container content-background" style="background-color: Gray; padding-top: 24px; padding-bottom: 24px; text-align:center" id="IDK">
-   <h4>IDK</h4>
+  <div class="container content-background" style="background-color: White; padding-top: 24px; padding-bottom: 24px; text-align:center" id="awards">
+   <h4>Awards and Accomplishments</h4>
       <div class="about_me_text">
-        <p>Front End Engineer by day. I enjoy working with TypeScript, Angular, and serverless architecture. I am currently getting into cryptocurrency. I also teach periodically.</p>
+        <p>Won competition for best entrepreneurial proposal</p>
+        <p>Was General Manager for WMNJ Drew's online Radio Station</p>
+        <p>County Champion for bowling in High School</p>
+        <p>Interned for Nokia/Bell Labs company</p>
    </div>
 </div>
-
- <!--KEEP WHATS BELOW THIS IS GOOD-->
-
 <footer id="footer">
   <div class="container">
   <div class="row">
     <div class="col">
-    <!--<div class="col footer-col-padding">-->
       <h3 class="h5">About This Page</h3>
       <p>Made by Brittany Grabowski</p>
     </div>
-
     <div class="col">
-      <h3 class="h5">Around the Web</h3>
+      <h3 class="h5">Social Media</h3>
       <ul class="list-inline">
-
-        <li class="list-inline-item"><a href="https://www.instagram.com/little_grabowski/?hl=en" target="mytarget"><i class="fa fa-instagram" aria-hidden="true" style="color:red"></i></i></a></li>
-        <li class="list-inline-item"><a href="https://www.linkedin.com/in/brittany-grabowski-b1b72a139/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" style="color:red"></i></a></li>
-
-
+        <li class="list-inline-item"><a href="https://www.instagram.com/little_grabowski/?hl=en" target="mytarget"><i class="fa fa-instagram" aria-hidden="true" style="color:white"></i></i></a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/brittany-grabowski-b1b72a139/" target="mytarget"><i class="fa fa-linkedin" aria-hidden="true" style="color:white"></i></a></li>
         </ul>
     </div>
   </div>
   </div>
-
-
-
-
 <div class="bottom-footer-background" style="background-color: rgba(255,255,255,0.14); padding-top: 24px; padding-bottom: 24px;">
   <div class="container">
     <div class="row">
@@ -510,18 +248,9 @@ background-image:url('/pix/samples/bubble1.gif');
 </div>
 </footer>
 
-
-
-
-
 <script>
 
 $('#copyright-year').text(new Date().getFullYear());
-
-$('.flip').hover(function(){
-        $(this).find('.card').toggleClass('flipped');
-
-    });
 </script>
 
 <!-- Optional JavaScript -->
