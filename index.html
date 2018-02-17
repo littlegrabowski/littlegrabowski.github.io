@@ -118,16 +118,16 @@ footer {
 <div class="collapse navbar-collapse justify-content-end" id="nav-content">
 <ul class="navbar-nav">
 <li class="nav-item">
-  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  <a class="nav-link smooth-scroll" href="#">Home <span class="sr-only">(current)</span></a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#about_me">About Me</a>
+  <a class="nav-link smooth-scroll" href="#about_me">About Me</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#awards">Awards</a>
+  <a class="nav-link smooth-scroll" href="#awards">Awards</a>
 </li>
   <li class="nav-item">
-  <a class="nav-link" href="#portfolio">Portfolio</a>
+  <a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a>
 </li>
 </ul>
 </nav>
@@ -160,6 +160,7 @@ background-image:url('/pix/samples/bubble1.gif');
         <div class="card-body">
           <h5 class="card-title">SQL</h5>
           <p class="card-text">Build a Database that tracks and reserves equipment</p>
+           <a href="https://www.w3schools.com/sql/default.asp" class="btn btn-primary">Learn SQL</a>
         </div>
       </div>
     </div>
@@ -178,6 +179,7 @@ background-image:url('/pix/samples/bubble1.gif');
         <div class="card-body">
           <h5 class="card-title">Puppy</h5>
           <p class="card-text">Raised a puppy to be seeing eye guide dog</p>
+          <a href="http://www.guidedogsofamerica.org/1/programs/puppy-raising/" class="btn btn-primary">Raise Guide Dog</a>
         </div>
       </div>
     </div>
@@ -255,8 +257,15 @@ background-image:url('/pix/samples/bubble1.gif');
 </footer>
 
 <script>
-
 $('#copyright-year').text(new Date().getFullYear());
+
+$('.smooth-scroll').on('click',function(e){
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
 </script>
 
 <!-- Optional JavaScript -->
